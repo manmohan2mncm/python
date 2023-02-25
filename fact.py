@@ -1,8 +1,9 @@
 def fact(a):
-    for x in range(1,a):
-        c=a*x
-    print(c)
+    if(a==1):
+        return 1
+    else:
+        return (a*fact(a-1))
 
 a=int(input('enter the value: '))
 
-fact(a)
+print(fact(a))
